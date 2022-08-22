@@ -1,7 +1,12 @@
 $(document).ready(function incluirHTML() {
-  var pathname = window.location.pathname;
-  var sapa = pathname.split('/');
-  console.log(sapa);
+  /* Agregar y quitar clase active del menu */
+  var pathname, pagina, index, elementoAcutal;
+  pathname = window.location.pathname;
+  pagina = pathname.split('/');
+  if(pagina[1] != ""){
+    index = $('#index').removeClass('active');
+    elementoAcutal = $('#'+pagina[1]).addClass('active');
+  }
   var elementos, i, elemento, archivo, solicitud;
   /* Recorrer una colección de todos los elementos HTML: */
   elementos = document.getElementsByTagName("*");
