@@ -442,6 +442,7 @@ img {
 }
 #mu-service .mu-service-area .mu-service-single h3 {
   font-size: 25px;
+  /* font-weight: bold; */
 }
 #mu-service .mu-service-area .mu-service-single p {
   font-weight: lighter;
